@@ -1,0 +1,134 @@
+/* Estilo base - mobile first */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root{
+    --color-fondo: #3f3f3f;
+    --color-secundario: #464646;
+    --color-texto: #dddddd
+}
+
+*{
+    font-family: "Kumbh Sans";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-fondo) ;
+    color: var(--color-texto)
+}
+
+h1{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2{
+
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 400;
+    margin-top: 1.5em ;
+}
+
+p{
+    margin: 10px 15px;   
+}
+
+/* Galeria */
+
+.galeria{
+    text-align: center;
+}
+
+/* Tarjetas */
+.tarjeta{
+    height: 20em;
+    width: 17em;
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    margin: 10px auto;
+    display: block;
+    padding: 2em;
+}
+/* Titulo de la tarjeta */
+.tarjeta .header{
+    font-size: 0.9em;
+}
+/* Imagen de la tarjeta */
+.contenedor{
+    height: 10em;
+    width: 10em;
+    margin: auto;
+}
+
+.contenedor img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Descripcion de la tarjeta */
+.descripcion{
+    font-size: 0.7em;
+}
+
+@media (min-width: 768px){
+
+    body{
+        background-color: red;
+    }
+
+    .tarjeta{
+        display: inline-block ;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 992px){
+    
+    body{
+        background-color: blue;
+    }
+
+    h1{
+        text-align: left;
+        margin: 2rem 5rem;
+    }
+
+    h2{
+        margin: 1rem 2rem;
+        text-align: left;
+        text-decoration: none;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    .tarjeta{
+        display: inline-block ;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1200px){
+    body{
+        background-color: purple;
+    }
+
+    h1{
+        margin: 4rem;
+        font-size: 5rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .tarjeta{
+        display: inline-block ;
+        margin: 10px;
+    }
+}
