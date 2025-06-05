@@ -38,7 +38,7 @@ p{
     margin: 10px 15px;   
 }
 
-/* Galeria */
+/* -- Galeria */
 
 .galeria{
     text-align: center;
@@ -76,23 +76,83 @@ p{
     font-size: 0.7em;
 }
 
+/* -- Formulario */
+
+form{
+    width: 100%;
+    color: var(--color-texto);
+    margin: 20px auto;
+    text-align: center;
+}
+
+form h2{
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+
+label{
+    display: inline-block;
+    margin: 10px auto;
+    font-size: 1rem;  
+    font-weight: 600;
+
+}
+
+input{
+    display: block;
+    background-color: var(--color-secundario);
+    border: none;
+    border-radius: 20px;    
+    padding: 0.8rem;
+    width: 15rem;
+}
+
+/* Boton */
+
+button{
+    border: none;
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    padding: 0.8rem;
+    border-radius: 20px;
+}
+
 @media (min-width: 768px){
 
-    body{
-        background-color: red;
-    }
+
 
     .tarjeta{
         display: inline-block ;
         margin: 10px;
     }
+
+    /* Formulario */
+
+    li{
+        display: inline-block;
+    }
+    
+    ul{
+        width: 50rem;
+        margin: auto;
+    }
+
+
+    label{
+        margin: 10px;
+    }
+
+    input{
+        width: 20rem;
+    }
+
+
 }
 
 @media (min-width: 992px){
     
-    body{
-        background-color: blue;
-    }
+
 
     h1{
         text-align: left;
@@ -111,12 +171,33 @@ p{
         display: inline-block ;
         margin: 10px;
     }
+
+    /* Formulario */
+
+    ul{
+        margin: 2rem auto;
+    }
+
+    label{
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-align: left;
+        font-style: italic; 
+    }
+
+    input{
+        height: 3rem;
+        width: 20rem;
+        border-radius: 50px;
+    }
+
+    button{
+        height: 3rem;
+        width: 6rem;
+    }
 }
 
 @media (min-width: 1200px){
-    body{
-        background-color: purple;
-    }
 
     h1{
         margin: 4rem;
